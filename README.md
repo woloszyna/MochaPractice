@@ -30,4 +30,4 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 ## <b>26/10/2020:</b>
 1. Continue on writing syntax to familiarise myself with syntax
 2. <del>apply to practice environment.</del>
-2. <b>LEARN TO READ INSTRUCTIONS RATHER THAN FOLLOWING (OUTDATED) YOUTUBE VIDEOS</b>
+2. <b>Learn to read main framework instructions rather than following (OUTDATED) YouTube Videos</b>
