@@ -15,6 +15,11 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 4. npm. install selenium-webdriver
 5. npm. install chromedriver
 6. npm. install geckodriver
+7. Verify that what's required is in fact installed
+    npm -g list <EXACT NAME OF THE NODE>
+    e.g. npm -g list mocha
+        OR  (if installed locally)
+    npm list mocha
 
 
 ## <b>HINTS:</b>
@@ -30,4 +35,9 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 ## <b>26/10/2020:</b>
 1. Continue on writing syntax to familiarise myself with syntax
 2. <del>apply to practice environment.</del>
-2. <b>Learn to read main framework instructions rather than following (OUTDATED) YouTube Videos</b>
+3. <b>Learn to read main framework instructions rather than following (OUTDATED) YouTube Videos</b>
+    a. Create the folder called "Test" as per the official mocha website and test files within;
+
+## <b>31/10/2020:</b>
+1. Continue to creating Framework for MochaJS on MacOs
+2. 
