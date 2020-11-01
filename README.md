@@ -38,6 +38,11 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 3. <b>Learn to read main framework instructions rather than following (OUTDATED) YouTube Videos</b>
     a. Create the folder called "Test" as per the official mocha website and test files within;
 
-## <b>31/10/2020:</b>
-1. Continue to creating Framework for MochaJS on MacOs
-2. 
+## <b>01/11/2020:</b>
+1. Learnt to use timeouts to be able to spin up the browser:
+    'Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called;'
+2. Continue to creating Framework for MochaJS on MacOs
+3. Installed 'code' command in path to allow open JS files from the terminal
+    Launch VS Code.
+    Open the Command Palette (⇧⌘P) and type ‘shell command’ to find the Shell Command: Install ‘code’ command in PATH command.
+4. 

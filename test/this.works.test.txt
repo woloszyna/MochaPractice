@@ -1,12 +1,14 @@
 var webdriver = require('selenium-webdriver'),
-    //{ describe, it, before, beforeEach, after, afterEach } = require('selenium-webdriver/testing');
-driver = require('chromedriver');
+    { describe, it, before, beforeEach, after, afterEach } = require('selenium-webdriver/testing');
     By = webdriver.By,
         until = webdriver.until;
+var driver;
 
 describe('some scenarios', function () {
+    //01/11/2020: ensure that this.timeout(TTTT); is used, to allow application to spin up before testing commenced
+    this.timeout(50000);
     beforeEach(function () {
-        var driver = new webdriver.Builder().forBrowser('chrome').build();
+        driver = new webdriver.Builder().forBrowser('chrome').build();
         driver.get('https://library-app.firebaseapp.com');
     });
 
