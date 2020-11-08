@@ -1,0 +1,197 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-01T13:08:57.767Z",
+    "end": "2020-11-01T13:09:10.256Z",
+    "duration": 12489,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4747606a-73e5-4bc9-9475-1754dddbbe9b",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+          "title": "this is some awesome testing",
+          "fullFile": "/Users/albert.woloszyn/Projects/HighCode/JavaScript/MochaPractice/test/startover.test.js",
+          "file": "/test/startover.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook: ret in \"this is some awesome testing\"",
+              "fullTitle": "this is some awesome testing \"before each\" hook: ret in \"this is some awesome testing\"",
+              "timedOut": false,
+              "duration": 2110,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = new webdriver.Builder().forBrowser('chrome').build();\ndriver.get ('https://library-app.firebaseapp.com');",
+              "err": {},
+              "uuid": "8b2c4871-d3a5-4220-bd90-a465fd46ef74",
+              "parentUUID": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook: ret in \"this is some awesome testing\"",
+              "fullTitle": "this is some awesome testing \"after each\" hook: ret in \"this is some awesome testing\"",
+              "timedOut": false,
+              "duration": 109,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "0c7b2fb7-e6dd-438f-af7b-bcc9482baad4",
+              "parentUUID": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "can take email address",
+              "fullTitle": "this is some awesome testing can take email address",
+              "timedOut": false,
+              "duration": 216,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var submintBtn = driver.findElement(By.css('.btn-primary'));\nvar emailField = driver.findElement(By.css('.ember-text-field'));\nemailField.sendKeys('tester@test.com');\ndriver.wait(function () {\n    return submintBtn.getCssValue('opacity').then(function (opacity) {\n        return opacity === '1';\n    }, 15000);\n});\nsubmintBtn.click();",
+              "err": {},
+              "uuid": "8d8d330a-3f96-4b73-87f2-c4bfc041249d",
+              "parentUUID": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "can show an alert when email provided and submitted",
+              "fullTitle": "this is some awesome testing can show an alert when email provided and submitted",
+              "timedOut": false,
+              "duration": 963,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var submintBtn = driver.findElement(By.css('.btn-primary'));\nvar emailField = driver.findElement(By.css('.ember-text-field'));\nemailField.sendKeys('tester@test.com');\nsubmintBtn.click();\ndriver.wait(until.elementLocated(By.css('.alert')), 5000).getText().then(function (txt) {\n    console.log('The alert reads: \\\"' + txt + '\\\".');\n});",
+              "err": {},
+              "uuid": "d17f5b4c-e6e8-4bda-af15-6bbdc5153c21",
+              "parentUUID": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "can clear the email field",
+              "fullTitle": "this is some awesome testing can clear the email field",
+              "timedOut": false,
+              "duration": 158,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var submintBtn = driver.findElement(By.css('.btn-primary'));\nvar emailField = driver.findElement(By.css('.ember-text-field'));\nemailField.sendKeys('thisiswrong@email.com');\ndriver.wait(function () {\n    return submintBtn.getCssValue('opacity').then(function (opacity) {\n        return opacity === '1';\n    }, 15000);\n});\nemailField.clear();\ndriver.wait(function () {\n    return submintBtn.getCssValue('opacity').then(function (opacity) {\n        return opacity === '0.65';\n    }, 15000);\n})",
+              "err": {},
+              "uuid": "46bf074d-9093-42fc-9ff2-3a043b159c3b",
+              "parentUUID": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "has all options from the navigation bar",
+              "fullTitle": "this is some awesome testing has all options from the navigation bar",
+              "timedOut": false,
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css('nav')).getText().then(function (text) {\n    console.log(text);\n});",
+              "err": {},
+              "uuid": "0abcde4e-c9d1-4cbc-88ef-413ac5b0956c",
+              "parentUUID": "d8ad2a4b-cd40-483c-9741-73f91d9a9be5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d8d330a-3f96-4b73-87f2-c4bfc041249d",
+            "d17f5b4c-e6e8-4bda-af15-6bbdc5153c21",
+            "46bf074d-9093-42fc-9ff2-3a043b159c3b",
+            "0abcde4e-c9d1-4cbc-88ef-413ac5b0956c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1364,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 50000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "autoOpen": "true"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
