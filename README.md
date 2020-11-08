@@ -45,10 +45,26 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 3. Installed 'code' command in path to allow open JS files from the terminal
     Launch VS Code.
     Open the Command Palette (⇧⌘P) and type ‘shell command’ to find the Shell Command: Install ‘code’ command in PATH command.
+
+    To start editing file execute the following:
+- code \path\to\the\file
+
 4. Adding Mochawesome reporter
     npm install mochawesome
     npm list mochawesome
-5. Running 
+
+    www: https://github.com/adamgruber/mochawesome
+
+5. Running Mochawesome reporter
     - mocha test --reporter node_modules/mochawesome --reporter-options autoOpen=true
             OR
     - add to the package.json file
+
+## <b>08/11/2020:</b>
+1. Assertions
+
+    a. calling node assert | assert = require('assert),
+
+
+2. Page object model recap
+3. 
