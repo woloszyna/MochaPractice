@@ -1,8 +1,6 @@
 # MochaPractice
 Practice Project to learn, practice and Use MochaJS Test Automation Framework
 
-## <b>DESCRIPTION:</b>
-
 
 ## <b>LEARNING PLATFORM: https://library-app.firebaseapp.com</b>
 ## <b>EXPERIMENTING AND PRACTICE PLATFORM: http://the-internet.herokuapp.com</b>
@@ -12,7 +10,7 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 1. mkdir <project name>
 2. mkdir test //This is very important for mocha js to be able to identify tests
 3. npm install mocha
-4. npm. install selenium-webdriver
+4. npm. install selenium-webdriver@3.6.0
 5. npm. install chromedriver
 6. npm. install geckodriver
 7. Verify that what's required is in fact installed
@@ -68,5 +66,5 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
 
 ## <b>15/11/2020:</b>
 
-1. Page object model recap
-2. 
+1. Page object model recap (Do NEVER USE CanquerJS on YT, full of crap!!!!);
+1. Page object model recap using better resource (QAShahin);
