@@ -66,5 +66,7 @@ Practice Project to learn, practice and Use MochaJS Test Automation Framework
     a. calling node assert | assert = require('assert),
 
 
-2. Page object model recap
-3. 
+## <b>15/11/2020:</b>
+
+1. Page object model recap
+2. 
