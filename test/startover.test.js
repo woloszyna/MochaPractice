@@ -7,6 +7,7 @@ var driver = webdriver;
 
 describe('this is some awesome testing', function () {
     this.timeout(50000);
+    
     beforeEach(function () {
         driver = new webdriver.Builder().forBrowser('chrome').build();
         driver.get ('https://library-app.firebaseapp.com');
